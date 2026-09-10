@@ -92,10 +92,10 @@
 #*.dcp (checkpoint files: better be ignored!)
 #!*.dcp
 
-!*.cace
-!*.hw
-!*.ip_user_files
-!*.runs
-!*.xpr
+*.cache/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.xpr
 
 # End of https://www.toptal.com/developers/gitignore/api/vivado,xilinxvivado,visualstudiocode
