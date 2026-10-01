@@ -26,8 +26,12 @@ module accumulator
     //Register - two-always-block style with reset and laod enable
     reg[BITS-1:0] Q_reg, Q_next;
 
-    always @(reset_n, load, Q_reg) begin
-        if(!reset_n) Q_next = {BITS{1'b0}};
+    always @(posedge clk)
+        Q_reg <= Q_next;
+
+    always @(reset_n, load, sum, Q_reg)
+    begin
+        if (!reset_n) Q_next = {BITS{1'b0}};
         else if (load) Q_next = sum;
         else Q_next = Q_reg;
     end
