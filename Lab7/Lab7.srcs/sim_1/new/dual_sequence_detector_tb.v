@@ -29,7 +29,7 @@ dual_sequence_detector uut(.clk(clk), .reset(reset), .x(x), .y(y));
 
 always #5 clk = ~clk;
 
-reg [15:0] stream = 16'b0101001001110001;
+reg [15:0] stream = 16'b1010100111001001;
 integer i;
 
 initial begin

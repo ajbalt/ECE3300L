@@ -19,7 +19,7 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-// Moore FSM: y = 1 while x has been 1 (or 00 for three or more consecutive clocks
+// Moore FSM: y = 1 while x has been 1 (or 0) for three or more consecutive clocks
 module conseq_sequence(
     input clk,
     input reset,

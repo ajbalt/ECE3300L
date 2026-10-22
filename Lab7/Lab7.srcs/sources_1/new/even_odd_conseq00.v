@@ -56,6 +56,6 @@ module even_odd_conseq00(
     end
 
     // Moore output: depends on state only
-    assign y = (state === S4);
+    assign y = (state == S4);
 
 endmodule

@@ -32,7 +32,7 @@ module dual_sequence_detector(
     S2 = 3'd2, // seen 01
     S3 = 3'd3, // seen 010 or 10
     S4 = 3'd4, // last bit was 1
-    S5 = 3'd5; //seen 1000
+    S5 = 3'd5; // seen 100
 
     reg [2:0] state, next_state;
 
